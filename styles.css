@@ -164,7 +164,7 @@ header nav a {
 
 #media {
   padding: 100px 0;
-  background-image: url("bandana.jpeg");
+  background-image: url("sass/bandana.jpeg");
   background-size: cover;
 }
 
@@ -285,7 +285,7 @@ header nav a {
 }
 
 #tour .top-img {
-  background-image: url("group.png");
+  background-image: url("sass/group.png");
   height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
