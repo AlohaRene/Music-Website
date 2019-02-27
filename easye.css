@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #19202a;
+}
+
+header {
+  position: absolute;
+  z-index: 3;
+  padding: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+header .logo img {
+  width: 50px;
+}
+
+header img {
+  width: 100%;
+}
+
+header nav {
+  align-self: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0 10px;
+}
+
+#top-section {
+  position: relative;
+  height: 100vh;
+}
+
+#top-section .bluredbg {
+  background-image: linear-gradient(45deg, #19202a 0%, #19202a 28%, rgba(25, 32, 42, 0.97) 30%, rgba(25, 32, 42, 0.8) 42%, rgba(25, 32, 42, 0.57) 59%, rgba(237, 11, 180, 0.36) 74%, rgba(125, 185, 232, 0) 100%), url("/img/top.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  filter: blur(20px) saturate(130%);
+  position: absolute;
+  z-index: 1;
+}
+
+#top-section .tekashi-img {
+  width: 30%;
+  filter: contrast(150%);
+}
+
+#top-section .tekashi-img img {
+  width: 188%;
+}
+
+#top-section .floating-img {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#bio {
+  padding: 100px 0;
+  background: black;
+  position: relative;
+  z-index: 3;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#bio .container {
+  display: flex;
+}
+
+#bio p {
+  width: 50%;
+  line-height: 1.8;
+  font-size: 0.9rem;
+  color: white;
+  padding: 0 50px;
+}
+
+#bio .logo-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 0 50px;
+}
+
+#media {
+  padding: 100px 0;
+  background-image: url("bandana.jpeg");
+  background-size: cover;
+}
+
+#media .title {
+  background: black;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  color: white;
+}
+
+#media .videos {
+  padding: 80px 50px 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 50px;
+}
+
+#media .video {
+  border-radius: 4px;
+  overflow: hidden;
+  height: 300px;
+  -webkit-box-shadow: 0px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 13px 24px -8px rgba(0, 0, 0, 0.75);
+}
+
+#media .video iframe {
+  height: 100%;
+}
+
+#music {
+  padding: 80px 0;
+  position: relative;
+}
+
+#music .bluredbg {
+  background-image: linear-gradient(45deg, #fffd3c 0%, #fffd3c 28%, rgba(255, 253, 60, 0.97) 30%, rgba(255, 253, 60, 0.8) 42%, rgba(25, 32, 42, 0.57) 59%, rgba(237, 11, 180, 0.2) 74%, rgba(125, 185, 232, 0) 100%), url("/img/album69.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  filter: blur(20px) saturate(130%);
+  position: absolute;
+  z-index: 1;
+}
+
+#music .container {
+  display: flex;
+  padding: 0 50px;
+  position: relative;
+  z-index: 3;
+}
+
+#music .info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#music .info .title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#music .info .sub-title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+#music .info .singles {
+  width: 400px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 80px;
+}
+
+#music .info .logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  list-style-type: none;
+}
+
+#music .info .singles li {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+#music .album-cover {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#music .album-cover img {
+  width: 50%;
+}
+
+#tour {
+  background: black;
+  position: relative;
+  z-index: 4;
+}
+
+#tour .top-img {
+  background-image: url("group.png");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: saturate(0%) contrast(150%);
+  position: relative;
+}
+
+footer {
+  background: #1b1b1b;
+  position: relative;
+  z-index: 4;
+  padding: 25px;
+  text-align: center;
+  color: white;
+}
+
+footer img {
+  max-width: 45px;
+}
+
+footer a {
+  color: red;
+  text-decoration: none;
+}
+
+#tour .tourdates {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+#tour .tourdates .title {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin: 0 0 80px;
+}
+
+#tour .tourdates .dates {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+#tour .tourdates .dates li {
+  color: white;
+  font-size: 1.3rem;
+  list-style-type: none;
+}
+
+#tour .tourdates .dates li span {
+  padding: 0 10px;
+}
+
+#tour .tourdates .dates li .city {
+  font-weight: 700;
+}
+
+#tour .tourdates .dates li .location {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+#tour .tourdates .dates li .date {
+  font-weight: 500;
+  color: #f14848;
+}
+
+/*# sourceMappingURL=easye.css.map */
