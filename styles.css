@@ -164,7 +164,7 @@ header nav a {
 
 #media {
   padding: 100px 0;
-  background-image: url("../sass/bandana.jpeg");
+  background-image: url("sass/bandana.jpeg");
   background-size: cover;
 }
 
