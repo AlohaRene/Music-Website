@@ -112,12 +112,12 @@ header nav a {
 }
 
 #top-section .tekashi-img {
-  width: 30%;
+  width: 7%;
   filter: contrast(150%);
 }
 
 #top-section .tekashi-img img {
-  width: 188%;
+  width: 450%;
 }
 
 #top-section .floating-img {
@@ -128,6 +128,7 @@ header nav a {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  right: 235px;
 }
 
 #bio {
