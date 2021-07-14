@@ -77,7 +77,7 @@ header {
 }
 
 header .logo img {
-  width: 50px;
+  width: 250px;
 }
 
 header img {
@@ -102,7 +102,12 @@ header nav a {
 }
 
 #top-section .bluredbg {
-  background-image: linear-gradient(45deg, #19202a 0%, #19202a 28%, rgba(25, 32, 42, 0.97) 30%, rgba(25, 32, 42, 0.8) 42%, rgba(25, 32, 42, 0.57) 59%, rgba(237, 11, 180, 0.36) 74%, rgba(125, 185, 232, 0) 100%), url("/img/top.jpg");
+  /*background-image: linear-gradient(45deg, #19202a 0%, #19202a 28%, rgba(25, 32, 42, 0.97) 30%, rgba(25, 32, 42, 0.8) 42%, rgba(25, 32, 42, 0.57) 59%, rgba(237, 11, 180, 0.36) 74%, rgba(125, 185, 232, 0) 100%), url("/img/top.jpg");*/
+  background: #e0f1f4; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #e0f1f4 0%, #7de1f1 35%, #2989d8 59%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #e0f1f4 0%,#7de1f1 35%,#2989d8 59%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #e0f1f4 0%,#7de1f1 35%,#2989d8 59%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f1f4', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -117,7 +122,7 @@ header nav a {
 }
 
 #top-section .tekashi-img img {
-  width: 450%;
+  width: 600%;
 }
 
 #top-section .floating-img {
@@ -133,7 +138,7 @@ header nav a {
 
 #bio {
   padding: 100px 0;
-  background: black;
+  background: #222222;
   position: relative;
   z-index: 3;
 }
@@ -149,8 +154,8 @@ header nav a {
 
 #bio p {
   width: 50%;
-  line-height: 1.8;
-  font-size: 0.9rem;
+  line-height: 2.3;
+  font-size: 1em;
   color: white;
   padding: 0 50px;
 }
@@ -165,13 +170,13 @@ header nav a {
 
 #media {
   padding: 100px 0;
-  background-image: url("sass/bandana.jpeg");
+  background-image: url("https://i.postimg.cc/jqWH76cp/ocean-Banner.webp");
   background-size: cover;
 }
 
 #media .title {
   background: black;
-  font-size: 1.1rem;
+  font-size: 2em;
   font-weight: 300;
   text-transform: uppercase;
   padding: 20px;
@@ -229,6 +234,8 @@ header nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: white;
+  align-items: center;
 }
 
 #music .info .title {
@@ -247,7 +254,7 @@ header nav a {
 }
 
 #music .info .singles {
-  width: 400px;
+  width: 70%;
   display: grid;
   grid-template-columns: 50% 50%;
   margin-bottom: 80px;
@@ -286,30 +293,31 @@ header nav a {
 }
 
 #tour .top-img {
-  background-image: url("sass/group.png");
+  background-image: url("https://i.postimg.cc/Hx1g9956/jLoGroup.webp");
   height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   filter: saturate(0%) contrast(150%);
   position: relative;
 }
 
 footer {
-  background: #1b1b1b;
+  background: white;
   position: relative;
   z-index: 4;
   padding: 25px;
   text-align: center;
-  color: white;
+  color: #1b1b1b;
 }
 
 footer img {
-  max-width: 45px;
+  max-width: 220px;
+  padding: 10px;
 }
 
 footer a {
-  color: red;
+  color: #1b1b1b;
   text-decoration: none;
 }
 
@@ -332,8 +340,9 @@ footer a {
 
 #tour .tourdates .dates {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+  grid-column-gap: 25px;
 }
 
 #tour .tourdates .dates li {
